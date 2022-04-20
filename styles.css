@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------------------------------Vertical SCROLLING*/
+.scroll-container {
+    margin: 0;
+    max-height: 100vh;
+    overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------------------------------------------------------------------ABOUT STYLING */
+
+.about-div {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 0;
+    margin: 0;
+    background-image: url("images\\earthview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-content {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 7rem);
+    width: calc(100vl - 500px);
+}
+
+.about-img {
+    width: 400px;
+    max-width: 100%;
+
+}
+
+.about-p {
+    background-color: rgba(0, 158, 187, 0.42);
+    padding: 1rem;
+}
+
+/*------------------------------------------------------------------Projects STYLING */
+
+.projects-div {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 0;
+    margin: 0;
+    background-image: url("images\\spacedust.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects-slideshow {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: rgba(0, 0, 0, 0.42);
+    max-width: calc(100vw - 10rem);
+}
+
+.project {
+    display: none;
+    background-color: yellowgreen;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+h2 {
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+  .next:hover, .prev:hover {
+      background-color: turquoise;
+  }
+
+  .next {
+    right: 5rem;
+  }
+
+/*------------------------------------------------------------------Contact STYLING */
+
+.contact-div {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 0;
+    margin: 0;
+    background-image: url("images\\earthwithsattelite.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
