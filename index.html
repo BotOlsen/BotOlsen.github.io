@@ -30,71 +30,149 @@
 					<h1>Projects</h1>
 					<div class="projects-slideshow">	
 						<div class="project">
-							<h2>cosmOS</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
-								Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
-								lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br />
-								<br />
-								Pibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
-								nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
-								foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
-								seber jumyt, sib.
-							</p>
-						</div>
-						<div class="project">
-							<div>
-								<h2>Beware of Birds</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
-									Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
-									lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br />
-									<br />
-									Pibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
-									nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
-									foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
-									seber jumyt, sib.
-								</p>
+							<div class="project-content">
+								<div class="project-photo-title">
+									<h2>cosmOS</h2>
+									<img class="cosmOS-img" src="under_construction.jpg" alt="Under construction image">
+								</div>
+								<div class="project-info">
+									<div class="project-info-description">
+										<h3>Description</h3>
+										<p>
+											This operating system, cosmOS, is a multitasking operating system written using SPEDE 
+											(System Programmers Educational Development Environment). This environment is a virtual 
+											machine that mimics hardware for the OS to utilize and standardizes implementation 
+											for various physical devices. 
+											<br/><br/>
+											The run loop for cosmOS starts by performing a context switch which will save the current
+											 processes trapframe. Then the interrupt handler will run on whatever interrupt triggered 
+											 the context switch. Once the interrupt is handled via it’s interrupt service routine, the 
+											 OS determines if there has been a keyboard key press by the user. These commands can 
+											 create processes, exit processes, display kernel stats, and many more. After it has checked 
+											 for user input, it will run the scheduler with a round robin implementation. After the 
+											 scheduling, another context switch is performed, and the next process takes over the CPU.  
+										</p>
+									</div>
+									<div class="project-info-tools-langs"> 
+										<h3>Tools, Technologies and Languages</h3>
+										<ul>
+											<li>C</li>
+											<li>Assembly</li>
+											<li>GDB</li>
+											<li>GitHub</li>
+											<li>VirtualBox</li>
+											<li>SPEDE</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="project-footer">
+								
 							</div>
 						</div>
 						<div class="project">
-							<h2>Cosmic Processing Unit</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
-								Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
-								lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br />
-								<br />
-								Pibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
-								nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
-								foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
-								seber jumyt, sib.
-							</p>
+							<div class="project-content">
+								<div class="project-photo-title">
+									<h2>Beware of Birds</h2>
+									<img class="bewareofbirds-img" src="under_construction.jpg" alt="Under construction image">
+								</div>
+								<div class="project-info">
+									<div class="project-info-description">
+										<h3>Description</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
+											Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
+											lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br/>
+										</p>
+									</div>
+									<div class="project-info-tools-langs"> 
+										<h3>Tools and Languages</h3>
+										<p>
+											ibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
+											nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
+											foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
+											seber jumyt, sib. <br/>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="project">
-							<h2>Nirvana</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
-								Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
-								lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br />
-								<br />
-								Pibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
-								nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
-								foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
-								seber jumyt, sib.
-							</p>
+							<div class="project-content">
+								<div class="project-photo-title">
+									<h2>Cosmic Processing Unit</h2>
+									<img class="cpu-img" src="under_construction.jpg" alt="Under construction image">
+								</div>
+								<div class="project-info">
+									<div class="project-info-description">
+										<h3>Description</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
+											Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
+											lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br/>
+										</p>
+									</div>
+									<div class="project-info-tools-langs"> 
+										<h3>Tools and Languages</h3>
+										<p>
+											ibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
+											nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
+											foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
+											seber jumyt, sib. <br/>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="project">
-							<h2>Very Small Array</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
-								Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
-								lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br />
-								<br />
-								Pibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
-								nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
-								foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
-								seber jumyt, sib.
-							</p>
+							<div class="project-content">
+								<div class="project-photo-title">
+									<h2>Nirvana</h2>
+									<img class="nirvana-img" src="under_construction.jpg" alt="Under construction image">
+								</div>
+								<div class="project-info">
+									<div class="project-info-description">
+										<h3>Description</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
+											Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
+											lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br/>
+										</p>
+									</div>
+									<div class="project-info-tools-langs"> 
+										<h3>Tools and Languages</h3>
+										<p>
+											ibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
+											nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
+											foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
+											seber jumyt, sib. <br/>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project">
+							<div class="project-content">
+								<div class="project-photo-title">
+									<h2>Very Small Array</h2>
+									<img class="vsa-img" src="under_construction.jpg" alt="Under construction image">
+								</div>
+								<div class="project-info">
+									<div class="project-info-description">
+										<h3>Description</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma pen fohy hi, bafad ve, bire meloes, silyt loresa fus mal dema toele fequu. 
+											Jibiloer cacoele da quan duhypa mabyj je dem cerymetiqua mafoe, fo mibejamoe dabefi. Najoeb bedibe lib melive jibimama femebuc, leva 
+											lydaj be pile dane debel fepa ralim. Ha lase me ne mylyd rif le potoed bocicimoef veb mubofel, bavu.<br/>
+										</p>
+									</div>
+									<div class="project-info-tools-langs"> 
+										<h3>Tools and Languages</h3>
+										<p>
+											ibab lad fyvefemy ru fib lamu jali mif debemafyby de leh mimibel, rile cah. Quil tadequo bihe suj boed, hobibebuv fitiv pusapame 
+											nobeliditi he bocah loemoe jel je. Fe ty rym fequ bynehajo beloe quiny tilemes quimuci lep, vy levydeled, folel jibademe. Badidedi
+											foemulada pamad vom fima, bimim laba ta memep, dimalomiba tibofedely. Hiryn ba natisije ceme dif fa bacahib nil feb, lihiha, laladub 
+											seber jumyt, sib. <br/>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 						<a class="prev" onclick="slideChange(-1)">&#10094;</a>
 						<a class="next" onclick="slideChange(1)">&#10095;</a>
