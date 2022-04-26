@@ -2,6 +2,8 @@ h1 {
     text-align: center;
     margin: 0;
     padding-top: 3rem;
+    color: aliceblue;
+    text-decoration: overline;
 }
 
 html, body {
@@ -68,23 +70,67 @@ section {
     background-image: url("images\\spacedust.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 5rem;
 }
 
 .projects-slideshow {
     margin-left: 5rem;
     margin-right: 5rem;
-    background-color: rgba(0, 0, 0, 0.42);
+    background-color: rgba(0, 0, 0, 0.65);
     max-width: calc(100vw - 10rem);
 }
 
 .project {
     display: none;
-    background-color: yellowgreen;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-right: 5%;
+    min-height: calc(100vh - 10rem);
+    max-height: calc(100vh - 10rem);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info-tools-langs {
+    align-content: center;
+}
+
+.project-info-description {
+    align-content: center;
 }
 
 h2 {
+    margin-bottom: 10%;
+    font-size: 3rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+.project-photo-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+    overflow: hidden;
+}
+
+.project-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  color: aqua;
+}
+
+.cosmOS-img, .vsa-img, .nirvana-img, .cpu-img, .bewareofbirds-img {
 
 }
 
@@ -93,11 +139,11 @@ h2 {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: -1.2222rem;
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 3rem;
     transition: 0.6s ease;
     user-select: none;
   }
