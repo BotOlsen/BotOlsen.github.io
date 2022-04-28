@@ -35,9 +35,16 @@ section {
     scroll-snap-align: start;
     padding: 0;
     margin: 0;
-    background-image: url("images\\earthview.jpg");
+    background-image:
+            linear-gradient(
+                rgba(0,0,0,.25),
+                rgba(0,0,0,.25)   
+            ),
+            url("images\\earthview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: aqua;
+    
 }
 
 .about-content {
@@ -56,7 +63,8 @@ section {
 }
 
 .about-p {
-    background-color: rgba(0, 158, 187, 0.42);
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 12px;
     padding: 1rem;
 }
 
@@ -67,10 +75,15 @@ section {
     scroll-snap-align: start;
     padding: 0;
     margin: 0;
-    background-image: url("images\\spacedust.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 5rem;
+    background-image: 
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)   
+        ),
+        url("images\\spacedust.jpg");
 }
 
 .projects-slideshow {
@@ -78,6 +91,7 @@ section {
     margin-right: 5rem;
     background-color: rgba(0, 0, 0, 0.65);
     max-width: calc(100vw - 10rem);
+    border-radius: 12px;
 }
 
 .project {
@@ -140,13 +154,14 @@ h3 {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -1.2222rem;
+    margin-top: -3rem;
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 3rem;
     transition: 0.6s ease;
     user-select: none;
+    border-radius: 3px;
   }
 
   .next:hover, .prev:hover {
@@ -164,7 +179,12 @@ h3 {
     scroll-snap-align: start;
     padding: 0;
     margin: 0;
-    background-image: url("images\\earthwithsattelite.jpg");
+    background-image: 
+                        linear-gradient(
+                         rgba(0,0,0,.5),
+                         rgba(0,0,0,.5)   
+                        ),
+                        url("images\\earthwithsattelite.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
