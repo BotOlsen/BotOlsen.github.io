@@ -131,7 +131,8 @@ h3 {
 }
 
 .cosmOS-img, .vsa-img, .nirvana-img, .cpu-img, .bewareofbirds-img {
-
+    max-width: 80%;
+    max-height: 90%
 }
 
 .prev, .next {
