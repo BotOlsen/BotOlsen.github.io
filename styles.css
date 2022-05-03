@@ -1,14 +1,56 @@
-h1 {
-    text-align: center;
-    margin: 0;
-    padding-top: 3rem;
-    color: aliceblue;
-    text-decoration: overline;
-}
-
 html, body {
     margin: 0;
     padding: 0;
+}
+
+.page-header {
+    text-align: center;
+    margin: 0;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    font-size: 5vh;
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.page-header span {
+    display:table-cell;
+    padding: 0 .15vw;
+    animation: bounce  1.5s infinite ease;
+}
+
+.page-header span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.page-header span:nth-child(2){
+    animation-delay: .125s;
+}
+
+.page-header span:nth-child(3){
+    animation-delay: .250s;
+}
+
+.page-header span:nth-child(4){
+    animation-delay: .375s;
+}
+
+.page-header span:nth-child(5){
+    animation-delay: .500s;
+}
+
+.page-header span:nth-child(6){
+    animation-delay: .625s;
+}
+
+.page-header span:nth-child(7){
+    animation-delay: .750s;
+}
+
+.page-header span:nth-child(8){
+    animation-delay: .825s;
 }
 
 /* ----------------------------------------------------------------Vertical SCROLLING*/
@@ -74,11 +116,8 @@ section {
 .projects-div {
     height: 100vh;
     scroll-snap-align: start;
-    padding: 0;
-    margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 5rem;
     background-image: 
         linear-gradient(
             rgba(0,0,0,.45),
@@ -88,23 +127,30 @@ section {
 }
 
 .projects-slideshow {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90vw;
+    height: 80vh;
+    border-radius: 100px;
     background-color: rgba(0, 0, 0, 0.65);
-    max-width: calc(100vw - 10rem);
-    border-radius: 12px;
+    animation: glow 1.5s infinite alternate;
+    position: relative;
 }
-
+  
 .project {
     display: none;
+    height: 100%;
+    width: 100%;
+    padding-left: 5%;
     padding-right: 5%;
-    min-height: calc(100vh - 10rem);
-    max-height: calc(100vh - 10rem);
+    
 }
 
 .project-content {
     display: flex;
     flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 
 .project-info-tools-langs {
@@ -132,22 +178,32 @@ h3 {
     justify-content: center;
     color: aqua;
     overflow: hidden;
+
 }
 
 .project-info {
   width: 50%;
+  height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 15%;
-  margin-bottom: 10%;
   color: aqua;
+  font-size: 1rem;
+}
+
+.fade{ 
+    animation-name: fade;
+    animation-duration: 1.5s;
+    width: auto;
+    border-radius: 100px;
 }
 
 .cosmOS-img, .vsa-img, .nirvana-img, .cpu-img, .bewareofbirds-img {
-    max-width: 80%;
-    max-height: 90%
+    max-width: 100%;
+    max-height: 70%;
+    object-fit: cover;
 }
 
 .prev, .next {
@@ -165,13 +221,33 @@ h3 {
     border-radius: 3px;
   }
 
-  .next:hover, .prev:hover {
-      background-color: turquoise;
-  }
+.next:hover, .prev:hover {
+    background-color: turquoise;
+}
 
-  .next {
-    right: 5rem;
-  }
+.next {
+    right: 0;
+}
+
+.slideshow-scroll {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.slideshow-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    transition: background-color 1.5s ease;
+}
+
+.active, .slideshow-dot:hover {
+    background-color: aqua;
+}
 
 /*------------------------------------------------------------------Contact STYLING */
 
@@ -188,4 +264,39 @@ h3 {
                         url("images\\earthwithsattelite.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*----------------------------------------------------------------------------------*/
+@keyframes bounce {
+    0% {
+        transform:translateY(0px);
+        color: rgb(255, 255, 255);
+    }
+    50% {
+        transform:translateY(-1.75vh);
+        color: rgb(0, 225, 255);
+    }
+    100% {
+        transform:translateY(0px);
+        color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -10px aqua;
+      }
+      to {
+        box-shadow: 0 0 10px 10px aquamarine;
+      }
+}
+
+@keyframes fade {
+    0% {
+        opacity: .1;
+        background-color: rgba(0, 255, 255, 0.65);
+    }
+    100% {
+        opacity: 1;
+    }
 }
