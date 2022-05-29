@@ -25,3 +25,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "grid";
   slideshowDots[slideIndex-1].className += " active";
 }
+
+function toggleNavbar() {
+  var x = document.getElementById("myNavBar");
+  if (x.className === "navbar") {
+    x.className += " navbarToggled";
+  } else {
+    x.className = "navbar";
+  }
+}
