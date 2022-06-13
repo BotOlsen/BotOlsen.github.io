@@ -78,6 +78,14 @@ section{
     }
 }
 
+.projects, .about, .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*******************INTRO***************************/
 .intro-blurb {
     margin-left: clamp(2.5em, 15vw, 40em);
     margin-top: auto;
@@ -101,13 +109,48 @@ section{
     max-width: 30em;
 }
 
-.projects, .about, .contact {
+/*******************ABOUT***************************/
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    gap: 1em;
+    margin: auto 5em;
+}
+
+.about h2 {
+    align-self: center;
+}
+
+.about-me{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.tech {
+    grid-column: 3/4;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
+.interests{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.self-photo {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*******************SCROLLING Slideshow***************************/
 .prev, .next {
